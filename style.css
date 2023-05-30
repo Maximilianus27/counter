@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     animation: colors 10s;
     animation-iteration-count: infinite;
+    font-family: arial, sans-serif;
 }
 @keyframes colors{
   0%{
