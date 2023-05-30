@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: colors 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colors{
+  0%{
+    background: #ffb8b8;
+  }
+  20%{
+    background: #ffebb8;
+  }
+  40%{
+    background: #b8ffbe;
+  }
+  60%{
+    background: #b8f1ff;
+  }
+  80%{
+    background: #c4b8ff;
+  }
+  100%{
+    background: #ffb8b8;
+  }
+}
+button{
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+.container{
+    height: 100dvh;
+    display: grid;
+    width: 100dvw;
+}
+
+.counter-body{
+    padding: 1rem;
+    text-align: center;
+}
+
+.title-text{
+    font-size: 2rem;
+}
+.counter-text{
+    font-size: 1rem;
+}
+.counter-text > span{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.current-count{
+    font-size: 1.5rem;
+}
+.doubled-count{
+  display: flex;
+  justify-content: center;
+}
+.doubled-count > .counter-text{
+  background: lightgray;
+  padding: .5em;
+  border-radius: .5em;
+  margin: 0 1em;
+}
+
+.count-buttons{
+    /*display: flex;
+    justify-content: center;*/
+    gap: 1rem;
+    margin-top: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+.count-button{
+    padding: .5rem;
+    width: 5rem;
+    margin: .5em;
+    transition: .5s;
+}
+#reset{
+  background: #edb4b4;color: black;
+  transition: .5s;
+}
+#reset:hover{
+  background: #dc5353;color: white;
+}
+#substract:hover, #add:hover{
+  background: lightgray;
+}
